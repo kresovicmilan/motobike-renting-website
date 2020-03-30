@@ -1,0 +1,129 @@
+@CHARSET "ISO-8859-1";
+
+#mapArea{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+#map {
+    height:400px; width:600px;
+    min-width: 600px;
+    background-image: url('imgs/map.png');
+    white-space: normal;
+    vertical-align: middle;
+    margin-bottom: 16px;
+}
+
+#selectedPointStats {
+    border-radius: 5px;
+    width:300px;
+    min-width: 200px;
+    height: 100px;
+    white-space: normal;
+    vertical-align: middle;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom:2%;
+    margin-bottom: 16px;
+    display: none;
+}
+
+#overallStats{
+    background-color: #1abc9c;
+    width: 600px;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.point {
+    position:absolute;
+    height:10px;
+    width:10px;
+    border-radius: 40%;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 7px 7px 7px 0;
+  display: inline-block;
+}
+
+#bookButton {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+#bookButton:hover {
+  opacity: 0.9;
+}
+
+#formStyle {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px;
+  display: none;
+}
+
+.col-25 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.rowForm:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+  #mapArea {   
+    flex-direction: column;
+  }
+
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #overallStats {
+    width: 100%;
+  }
+
+  #selectedPointStats {
+    width: 100%;
+  }
+
+}
+
+
+
+
