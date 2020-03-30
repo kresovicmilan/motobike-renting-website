@@ -1,6 +1,6 @@
-# Distributed programming I 2018/2019 - MotoBike Renting App
+# MotoBike Renting App
 
-Web application for renting service of motorbikes. The goal of this application is to facilitate renting of motorbikes around the city for everyday users of this service.
+Web application for renting service of motorbikes made as part of Distributed programming I course. The goal of this application is to facilitate renting of motorbikes around the city for everyday users of this service.
 
 ## Download instructions
 
